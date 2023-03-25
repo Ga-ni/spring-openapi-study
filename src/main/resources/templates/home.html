@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task</title>
+</head>
+<body>
+
+<form method="get" action="/api/search/blog">
+    <input type="hidden" name="vendor" value="kakao"/>
+    <input type="hidden" name="per_page_size" value=10 />
+    <input type="hidden" name="page" value=1 />
+    <input type="text" name="keyword" placeholder="검색할 키워드를 입력해주세요"/>
+    <select name="sort">
+        <option value="accuracy" selected>정확도순</option>
+        <option value="recency">최신순</option>
+    </select>
+    <button type="submit">검색</button>
+</form>
+
+
+</body>
+</html>
